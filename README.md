@@ -106,6 +106,7 @@ EOF
 
 ##### Replace token
 In the config.yml replace value "replace-token-name" by echo $(openssl rand -base64 30 | sed 's=/=\\/=g')
+
 Example token EyZhNUYfvrcxrxIEmhoFMD5GByZpvWRm60YJCBvu
 http://registry-hook:8000?token=EyZhNUYfvrcxrxIEmhoFMD5GByZpvWRm60YJCBvu&hook=mailer
 
@@ -149,7 +150,8 @@ docker volume create registry_hook-scr
 ```
 
 ##### Docker container registry-hook:
-Replace value "replace-token-name" by token (see above) !!! Example: -e "TOKEN=EyZhNUYfvrcxrxIEmhoFMD5GByZpvWRm60YJCBvu"
+Replace value "replace-token-name" by token (see above) !!!
+Example: -e "TOKEN=EyZhNUYfvrcxrxIEmhoFMD5GByZpvWRm60YJCBvu"
 
 ```console
 docker run -dit \
