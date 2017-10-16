@@ -110,8 +110,9 @@ In the config.yml replace value "replace-token-name" by echo $(openssl rand -bas
 Example token EyZhNUYfvrcxrxIEmhoFMD5GByZpvWRm60YJCBvu
 http://registry-hook:8000?token=EyZhNUYfvrcxrxIEmhoFMD5GByZpvWRm60YJCBvu&hook=mailer
 
+##### Docker container registry:
+
 ```console
-Docker container registry:
 docker run -dit \
  -v registry-data:/var/lib/registry \
  -v registry-auth:/auth \
