@@ -49,7 +49,7 @@ systemctl restart docker.service
 cd /var/lib/docker/volumes/registry-auth/_data/
 docker run --entrypoint htpasswd registry:2 -Bbn hubadm1 1qaz@WSX > htpasswd
 docker run --entrypoint htpasswd registry:2 -Bbn hubadm2 1qaz@WSX >> htpasswd
-ocker run --entrypoint htpasswd registry:2 -Bbn hubadm3 1qaz@WSX >> htpasswd
+docker run --entrypoint htpasswd registry:2 -Bbn hubadm3 1qaz@WSX >> htpasswd
 docker container prune
 ```
 
