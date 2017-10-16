@@ -86,12 +86,12 @@ http:
 notifications:
  endpoints:
    - name: mailer
-     url: http://registry-hook:8000?token=EyZhNUYfvrcxrxIEmhoFMD5GByZpvWRm60YJCBvu&hook=mailer
+     url: http://registry-hook:8000?token=replace-token-name&hook=mailer
      timeout: 1000ms
      threshold: 1
      backoff: 1s
    - name: logger
-     url: http://registry-hook:8000?token=EyZhNUYfvrcxrxIEmhoFMD5GByZpvWRm60YJCBvu&hook=logger
+     url: http://registry-hook:8000?token=replace-token-name&hook=logger
      timeout: 1000ms
      threshold: 1
      backoff: 1s
