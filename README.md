@@ -167,7 +167,7 @@ docker run -dit \
  --network=registry_net-prod -p 8000:8000/tcp \
  --restart=always \
  --name registry-hook \
- rlagutinhub/registry-hook:latest
+ rlagutinhub/registry-hook:201710161400
 ```
 
 Other:
