@@ -151,6 +151,7 @@ docker volume create registry_hook-scr
 
 ##### Docker container registry-hook:
 Replace value "replace-token-name" by token (see above) !!!
+
 Example: -e "TOKEN=EyZhNUYfvrcxrxIEmhoFMD5GByZpvWRm60YJCBvu"
 
 ```console
