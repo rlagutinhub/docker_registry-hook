@@ -191,5 +191,5 @@ docker volume rm registry-auth
 docker volume rm registry-conf
 docker volume rm registry_hook-scr
 docker image rm registry:2
-docker image rm rlagutinhub/registry-hook:latest
+docker image rm rlagutinhub/registry-hook:201710161400
 ```
