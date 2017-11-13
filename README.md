@@ -1,4 +1,4 @@
-## Docker: registry-hook
+## Docker: docker_registry-hook
 
 Compiled Docker image: https://hub.docker.com/r/rlagutinhub/registry-hook/
 
