@@ -8,7 +8,7 @@ Compiled Docker image: https://hub.docker.com/r/rlagutinhub/registry-hook/
 ### Install
 
 ```console
-git clone https://github.com/rlagutinhub/registry-hook.git
+git clone https://github.com/rlagutinhub/docker_registry-hook.git
 cd registry-hook
 ```
 
