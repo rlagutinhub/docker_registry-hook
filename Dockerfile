@@ -1,9 +1,9 @@
 # vendor="Lagutin R.A."
 # maintainer="Lagutin R.A. <rlagutin@mta4.ru>"
-# name="registry-hook"
+# name="docker_registry-hook"
 # description="Python 3 BASEHTTPSERVER for docker registry notifications. The server send a message when the image pushed to registry."
-# version="v.1-prod."
-# release-date="201710161400"
+# version="v.2-prod."
+# release-date="201711111400"
 
 # ---------------------------------------------------------------------------
 
@@ -117,7 +117,7 @@
 # Configure Docker private registry hook:
 
 # Docker Image:
-# docker build -t rlagutinhub/registry-hook .
+# docker build -t rlagutinhub/docker_registry-hook .
 
 # Docker network:
 # docker network create -d bridge registry_net-prod
@@ -138,7 +138,7 @@
 #  --network=registry_net-prod -p 8000:8000/tcp \
 #  --restart=always \
 #  --name registry-hook \
-#  rlagutinhub/registry-hook:latest
+#  rlagutinhub/docker_registry-hook:latest
 
 # ---------------------------------------------------------------------------
 # Other:
@@ -161,16 +161,16 @@
 # docker volume rm registry-conf
 # docker volume rm registry_hook-scr
 # docker image rm registry:2
-# docker image rm rlagutinhub/registry-hook:latest
+# docker image rm rlagutinhub/docker_registry-hook:latest
 
 FROM python:3
 
 LABEL rlagutinhub.community.vendor="Lagutin R.A." \
 	rlagutinhub.community.maintainer="Lagutin R.A. <rlagutin@mta4.ru>" \
-	rlagutinhub.community.name="registry-hook" \
+	rlagutinhub.community.name="docker_registry-hook" \
 	rlagutinhub.community.description="Python 3 BASEHTTPSERVER for docker registry notifications. The server send a message when the image pushed to registry." \
-	rlagutinhub.community.version="v.1-prod." \
-	rlagutinhub.community.release-date="201710161400"
+	rlagutinhub.community.version="v.2-prod." \
+	rlagutinhub.community.release-date="201711111400"
 
 COPY scr /scr
 COPY app /app
