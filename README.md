@@ -1,6 +1,6 @@
 ## Docker: docker_registry-hook
 
-Compiled Docker image: https://hub.docker.com/r/rlagutinhub/registry-hook/
+Compiled Docker image: https://hub.docker.com/r/rlagutinhub/docker_registry-hook/
 
 -	Python 3 BASEHTTPSERVER for docker registry notifications. The server send a message when the image pushed to registry.
 -	Base image python:3
@@ -135,7 +135,7 @@ docker run -dit \
 ##### Docker Image:
 
 ```console
-docker build -t rlagutinhub/registry-hook:201710161400 .
+docker build -t rlagutinhub/docker_registry-hook .
 ```
 
 ##### Docker network:
@@ -167,7 +167,7 @@ docker run -dit \
  --network=registry_net-prod -p 8000:8000/tcp \
  --restart=always \
  --name registry-hook \
- rlagutinhub/registry-hook:201710161400
+ rlagutinhub/docker_registry-hook:latest
 ```
 
 Other:
@@ -191,5 +191,5 @@ docker volume rm registry-auth
 docker volume rm registry-conf
 docker volume rm registry_hook-scr
 docker image rm registry:2
-docker image rm rlagutinhub/registry-hook:201710161400
+docker image rm rlagutinhub/docker_registry-hook:latest
 ```
